@@ -47,12 +47,17 @@ export default function Hero() {
                 </nav>
 
                 {/* Mobile Menu */}
-                <div className={`fixed inset-0 z-100 bg-black/60 text-black backdrop-blur flex flex-col items-center justify-center text-lg gap-8 md:hidden transition-transform duration-300 ${menuOpen ? "translate-x-0" : "-translate-x-full"}`} >
+                <div className={`fixed inset-0 z-100 bg-black/60 text-black backdrop-blur flex flex-col items-center justify-center text-lg gap-8 md:hidden transition-transform duration-300 ${menuOpen ? "translate-x-0" : "-translate-x-full"}`}>
                     <a href="#" className="text-white">Home</a>
                     <a href="#features" className="text-white">Features</a>
                     <a href="#testimonials" className="text-white">Testimonials</a>
                     <a href="#contact" className="text-white">Contact</a>
-                    <button onClick={() => setMenuOpen(false)} className="active:ring-3 active:ring-white aspect-square size-10 p-1 items-center justify-center bg-neutral-900 hover:bg-black transition text-white rounded-md flex" >
+
+                    <Link to="/app?state=register" className="text-white">Get started</Link>
+
+                    <Link to="/app?state=login" className="text-white">Login</Link>
+
+                    <button onClick={() => setMenuOpen(false)} className="active:ring-3 active:ring-white aspect-square size-10 p-1 items-center justify-center bg-neutral-900 hover:bg-black transition text-white rounded-md flex">
                         X
                     </button>
                 </div>
@@ -98,7 +103,7 @@ export default function Hero() {
                         </Link>
                         <button className="flex items-center gap-2 border border-slate-400 hover:bg-neutral-100 transition rounded-full px-7 h-12 text-slate-700">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-video size-5" aria-hidden="true"><path d="m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5"></path><rect x="2" y="6" width="14" height="12" rx="2"></rect></svg>
-                            <span>Try demo</span>
+                            <span>View demo</span>
                         </button>
                     </div>
 

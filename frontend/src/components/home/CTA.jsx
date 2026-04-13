@@ -24,8 +24,8 @@ export default function CTA() {
                                 <span className="block transition-transform duration-200 group-hover:-translate-y-full">
                                     Build your resume now
                                 </span>
-                                <span className="absolute top-0 left-0 block transition-transform duration-200 group-hover:translate-y-0 translate-y-full">
-                                    Build your resume now
+                                <span className="absolute top-0 left-10 block transition-transform duration-200 group-hover:translate-y-0 translate-y-full">
+                                    Now or never
                                 </span>
                             </div>
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m5.833 14.168 8.334-8.333m0 8.333V5.835H5.833" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" /></svg>
